@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.fixthegame.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"DisableVillagerBreeding",
+		"ScaleMobHealth"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

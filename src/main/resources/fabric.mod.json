@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "fix-the-game",
+	"version": "${version}",
+	"name": "Fix the game!",
+	"description": "Fix the game, by making changes to vanilla minecraft in order to be more balanced.",
+	"authors": [
+		"Neelesh Polireddy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/neeleshpoli/fix-the-game"
+	},
+	"license": "MIT",
+	"icon": "assets/fix-the-game/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fixthegame.FixTheGame"
+		]
+	},
+	"mixins": [
+		"fix-the-game.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
