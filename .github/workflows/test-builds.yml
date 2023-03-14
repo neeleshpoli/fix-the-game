@@ -1,5 +1,9 @@
 name: Unstable Builds (Pushes)
-on: [push]
+on:
+  push:
+    branches: [testing]
+  pull_request:
+    branches: [testing]
 
 jobs:
   build:
