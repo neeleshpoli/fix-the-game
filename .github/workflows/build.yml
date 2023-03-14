@@ -3,8 +3,10 @@
 # certain platforms or Java versions, and provides a first line of defence
 # against bad commits.
 
-name: Stable Builds (Pull Requests)
-on: [pull_request]
+name: Stable Builds
+on: 
+  push:
+    branches: [master]
 
 jobs:
   build:
