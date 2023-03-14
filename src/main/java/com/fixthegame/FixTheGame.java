@@ -10,7 +10,7 @@ public class FixTheGame implements ModInitializer {
 	
 
 	public static boolean disableVillagerBreeding;
-	public static float scalehealth;
+	public static float scalehealth, cropGrowthSlownessMultiplier, scaleBabyTime;
 	@Override
 	public void onInitialize() {
 		ModConfig config = new ModConfig();
@@ -18,8 +18,9 @@ public class FixTheGame implements ModInitializer {
 
 		disableVillagerBreeding = config.disableVillagerBreeding;
 		scalehealth = config.scalehealth;
+		cropGrowthSlownessMultiplier = config.cropGrowthSlownessMultiplier;
+		scaleBabyTime = config.scaleBabyTime;
 
 		LOGGER.info("Fixing your game...");
 	}
-	
 }
