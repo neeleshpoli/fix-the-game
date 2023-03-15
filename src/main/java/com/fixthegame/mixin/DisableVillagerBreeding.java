@@ -16,7 +16,7 @@ public class DisableVillagerBreeding {
 	@Inject(at = @At("HEAD"), method = "isReadyToBreed", cancellable = true)
 	void isReadyToBreed(CallbackInfoReturnable<Boolean> returner) {
 		if (FixTheGame.disableVillagerBreeding) {
-			returner.setReturnValue(true);
+			returner.setReturnValue(false);
 			returner.cancel();
 		}
 	}
